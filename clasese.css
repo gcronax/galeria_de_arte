@@ -6,6 +6,14 @@ html, body {
     
     
 }
+.cuadro {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Animación suave al transformar */
+}
+
+.cuadro:hover {
+    transform: scale(1.1); /* Escala un 10% más grande */
+}
 .cabecera {
     margin: 0;
     padding: 0;
