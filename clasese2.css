@@ -4,6 +4,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: rgb(37, 36, 36);
+    color: aliceblue;
     
     
 }
