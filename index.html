@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Galeria de arte</title>
+    <link id="pruebaid" rel="stylesheet" href="clasese.css">
+</head>
+
+<body>
+
+    <div>
+        <select id="selectTema" >
+            <option onclick="aplicarb()" value="claro">tema claro</option>
+            <option onclick="aplicaroscuro()" value="oscuro">tema oscuro</option>
+        </select>
+        
+    <label for="numero"></label>
+    <input type="number" id="numero" value="10" style="width: 50px;">
+    <button onclick="vaciarWeb()">mostrar cuadros</button>
+
+
+
+
+    </div>
+
+<div class="cabecera">
+    <h1 class="centro">
+        <a href="index.html" class="tit">
+            Galería de arte
+        </a>
+    </h1>
+    <h2 class="subindices">
+        <a href="formulario.html" class="tit">
+            WIP -
+        </a>
+        <a href="autor.html" class="tit">
+            - (about me)
+        </a>
+    </h2>
+</div>
+
+
+
+
+<br>
+<div class="contenedor">
+    <div class="cuadro">
+        <img src="imag/1.jpg"  alt="la imagen no pudo ser cargada" >        
+        <br>
+        <h1>Syria, Ruins by the Sea</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Frederic Edwin Church</li>
+            <li><span class="label">Año de creación:</span> 1870</li>
+            <li><span class="label">Descripción:</span> Un paisaje pintoresco que representa ruinas cerca del mar, destacando la grandiosidad del cielo y las texturas arquitectónicas.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/2.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Knight at the Crossroads</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Viktor Vasnetsov</li>
+            <li><span class="label">Año de creación:</span> 1878</li>
+            <li><span class="label">Descripción:</span> Representa a un caballero medieval enfrentando una encrucijada, con un enfoque en la mitología y simbolismo del romanticismo ruso.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/3.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>A Dream of Italy</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Robert S. Duncanson</li>
+            <li><span class="label">Año de creación:</span> 1865</li>
+            <li><span class="label">Descripción:</span> Un paisaje idealizado que evoca la belleza y serenidad de Italia, influenciado por el romanticismo del siglo XIX.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/4.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>A View near Tivoli (Morning)</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Thomas Cole</li>
+            <li><span class="label">Año de creación:</span> 1832</li>
+            <li><span class="label">Descripción:</span> Una obra del fundador de la Escuela del Río Hudson, mostrando una vista romántica de Tivoli al amanecer.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/5.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Among the Sierra Nevada, California</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Albert Bierstadt</li>
+            <li><span class="label">Año de creación:</span> 1868</li>
+            <li><span class="label">Descripción:</span> Un paisaje épico que captura la majestuosidad de las montañas de Sierra Nevada con una luz sublime y detalles espectaculares.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/6.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>The Rocky Mountains, Lander's Peak</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Albert Bierstadt</li>
+            <li><span class="label">Año de creación:</span> 1863</li>
+            <li><span class="label">Descripción:</span> Una de las obras más célebres de Bierstadt, que retrata la belleza salvaje de las Montañas Rocosas con dramatismo romántico.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/7.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Canadian Rockies (Lake Louise)</h1>
+        <ul>
+            <li><span class="label">Autor:</span> John Singer Sargent</li>
+            <li><span class="label">Año de creación:</span> 1916</li>
+            <li><span class="label">Descripción:</span> Una representación serena y majestuosa del lago Louise en las Montañas Rocosas canadienses, destacando la belleza natural de la región.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/8.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>The Cardsharps</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Caravaggio (Michelangelo Merisi)</li>
+            <li><span class="label">Año de creación:</span> 1594</li>
+            <li><span class="label">Descripción:</span> Una escena cargada de tensión y realismo que muestra a un joven siendo engañado en un juego de cartas, ejemplificando el dramatismo del estilo barroco.</li>
+        </ul>
+    </div>
+    
+    
+    <div class="cuadro">
+        <img src="imag/9.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Abadía en el Robledal</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Caspar David Friedrich</li>
+            <li><span class="label">Año de creación:</span> 1810</li>
+            <li><span class="label">Descripción:</span> Un paisaje romántico que muestra una abadía en ruinas rodeada de un bosque sombrío, simbolizando la fugacidad de la vida y la espiritualidad.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/10.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>El Árbol Solitario</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Caspar David Friedrich</li>
+            <li><span class="label">Año de creación:</span> 1822</li>
+            <li><span class="label">Descripción:</span> Una composición que resalta la soledad y la conexión entre el hombre y la naturaleza, con un árbol solitario en un paisaje rural.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/11.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Mujer con Sombrilla</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Claude Monet</li>
+            <li><span class="label">Año de creación:</span> 1875</li>
+            <li><span class="label">Descripción:</span> Una escena al aire libre que retrata a la esposa de Monet y su hijo, capturando la luz y el movimiento característicos del impresionismo.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/12.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>La Consumación del Imperio</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Thomas Cole</li>
+            <li><span class="label">Año de creación:</span> 1836</li>
+            <li><span class="label">Descripción:</span> Parte de la serie *El Curso del Imperio*, muestra la grandeza y el apogeo de una civilización, resaltando la fragilidad del poder humano.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/13.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>La Destrucción del Imperio</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Thomas Cole</li>
+            <li><span class="label">Año de creación:</span> 1836</li>
+            <li><span class="label">Descripción:</span> Representa la caída de una civilización en medio de la guerra y el caos, subrayando las consecuencias de la ambición desmedida.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/14.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Composición A</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Piet Mondrian</li>
+            <li><span class="label">Año de creación:</span> 1920</li>
+            <li><span class="label">Descripción:</span> Un ejemplo del neoplasticismo, donde Mondrian utiliza formas geométricas puras y colores primarios para expresar equilibrio y armonía.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/15.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Salisbury Meadows</h1>
+        <ul>
+            <li><span class="label">Autor:</span> John Constable</li>
+            <li><span class="label">Año de creación:</span> 1831</li>
+            <li><span class="label">Descripción:</span> Un paisaje bucólico que captura la tranquilidad y la belleza de los campos ingleses, con énfasis en el cielo y los efectos de la luz.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/16.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Aurora Boreal</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Frederic Edwin Church</li>
+            <li><span class="label">Año de creación:</span> 1865</li>
+            <li><span class="label">Descripción:</span> Una escena impresionante que muestra el fenómeno de la aurora boreal sobre un paisaje ártico, destacando la majestuosidad de la naturaleza.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/17.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Cataratas del Niágara, desde el lado americano</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Frederic Edwin Church</li>
+            <li><span class="label">Año de creación:</span> 1867</li>
+            <li><span class="label">Descripción:</span> Una vista majestuosa de las cataratas del Niágara que refleja la fuerza y la inmensidad de la naturaleza, característica del romanticismo americano.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/18.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Estación de lluvias en los trópicos</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Frederic Edwin Church</li>
+            <li><span class="label">Año de creación:</span> 1866</li>
+            <li><span class="label">Descripción:</span> Un paisaje tropical vibrante que captura el drama de una tormenta tropical y la exuberancia de la vegetación en climas cálidos.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/19.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Gótico americano</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Grant Wood</li>
+            <li><span class="label">Año de creación:</span> 1930</li>
+            <li><span class="label">Descripción:</span> Una icónica representación de la vida rural americana, famosa por su simbolismo y los rostros serios de sus protagonistas.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/20.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Acantilados del río Green, Wyoming</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Thomas Moran</li>
+            <li><span class="label">Año de creación:</span> 1874</li>
+            <li><span class="label">Descripción:</span> Un paisaje occidental que muestra los acantilados del río Green, representando la belleza de las tierras inexploradas de América.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/21.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Colibrí y flores de manzano</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Martin Johnson Heade</li>
+            <li><span class="label">Año de creación:</span> 1875-1885</li>
+            <li><span class="label">Descripción:</span> Una obra delicada que combina el estudio científico de la naturaleza con el arte, mostrando un colibrí entre flores de manzano.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/22.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Stańczyk</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Jan Matejko</li>
+            <li><span class="label">Año de creación:</span> 1862</li>
+            <li><span class="label">Descripción:</span> Un retrato melancólico del bufón real Stańczyk, simbolizando la preocupación por el destino de Polonia en un momento histórico crítico.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/24.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>El Vesubio en erupción</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Joseph Mallord William Turner</li>
+            <li><span class="label">Año de creación:</span> 1817-1820</li>
+            <li><span class="label">Descripción:</span> Una representación dramática de la erupción del monte Vesubio, destacando el poder destructivo y la belleza sublime de la naturaleza.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/23.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>El naufragio</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Joseph Mallord William Turner</li>
+            <li><span class="label">Año de creación:</span> 1805</li>
+            <li><span class="label">Descripción:</span> Una escena marítima que muestra el caos de un naufragio, combinando emoción y técnica en la pintura romántica.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/25.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Cargadores de carbón a la luz de la luna</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Joseph Mallord William Turner</li>
+            <li><span class="label">Año de creación:</span> 1835</li>
+            <li><span class="label">Descripción:</span> Un paisaje nocturno que captura la actividad industrial con un ambiente etéreo y poético.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/26.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Cristo en el desierto</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Ivan Kramskoi</li>
+            <li><span class="label">Año de creación:</span> 1872</li>
+            <li><span class="label">Descripción:</span> Un retrato contemplativo de Cristo en el desierto, representando su lucha espiritual y soledad.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/27.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>La joven de la perla</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Johannes Vermeer</li>
+            <li><span class="label">Año de creación:</span> 1665</li>
+            <li><span class="label">Descripción:</span> Un retrato íntimo y cautivador conocido como la “Mona Lisa del Norte,” destacando el uso magistral de la luz y el color.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/28.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Mirando hacia el valle de Yosemite</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Albert Bierstadt</li>
+            <li><span class="label">Año de creación:</span> 1865</li>
+            <li><span class="label">Descripción:</span> Una vista panorámica del valle de Yosemite, destacando la grandeza y la majestuosidad de la naturaleza americana.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/29.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>La montaña de la Santa Cruz</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Thomas Moran</li>
+            <li><span class="label">Año de creación:</span> 1875</li>
+            <li><span class="label">Descripción:</span> Un paisaje que combina realismo y simbolismo, representando la montaña de Colorado conocida por su distintivo patrón de cruz de nieve.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/30.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Paseo a orillas del mar</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Joaquín Sorolla</li>
+            <li><span class="label">Año de creación:</span> 1909</li>
+            <li><span class="label">Descripción:</span> Una obra luminosa y vibrante que representa a dos figuras paseando por la playa, destacando el dominio de Sorolla en capturar la luz y el movimiento del mar.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/31.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Praderas de Newburyport</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Martin Johnson Heade</li>
+            <li><span class="label">Año de creación:</span> 1876-1881</li>
+            <li><span class="label">Descripción:</span> Un paisaje tranquilo que muestra las praderas de Newburyport al atardecer, reflejando la serenidad y la atención al detalle características de Heade.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/32.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Composición II en rojo, azul y amarillo</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Piet Mondrian</li>
+            <li><span class="label">Año de creación:</span> 1930</li>
+            <li><span class="label">Descripción:</span> Una obra clave del neoplasticismo, donde Mondrian utiliza líneas negras, colores primarios y formas geométricas para expresar armonía y equilibrio.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/33.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Composición n.º 10</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Piet Mondrian</li>
+            <li><span class="label">Año de creación:</span> 1939-1942</li>
+            <li><span class="label">Descripción:</span> Una evolución del estilo de Mondrian, con mayor énfasis en las líneas negras y la fragmentación de las formas para explorar nuevas composiciones abstractas.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/34.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Cristo en la tormenta en el lago de Galilea</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Rembrandt van Rijn</li>
+            <li><span class="label">Año de creación:</span> 1633</li>
+            <li><span class="label">Descripción:</span> Una representación dramática del milagro bíblico, destacando el dominio de Rembrandt en el uso de la luz y la emoción.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/35.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Daniel en el foso de los leones</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Peter Paul Rubens</li>
+            <li><span class="label">Año de creación:</span> 1614-1616</li>
+            <li><span class="label">Descripción:</span> Una escena bíblica que muestra la fe y la serenidad de Daniel entre los leones, con la teatralidad y el dinamismo característicos de Rubens.</li>
+        </ul>
+    </div>
+    
+    <div class="cuadro">
+        <img src="imag/36.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>El mar Egeo</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Frederic Edwin Church</li>
+            <li><span class="label">Año de creación:</span> 1877</li>
+            <li><span class="label">Descripción:</span> Una vista idealizada del mar Egeo, combinando elementos históricos y geográficos en una obra que captura la majestuosidad del paisaje.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/37.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>La mañana de la ejecución de los Streltsy</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Vasily Surikov</li>
+            <li><span class="label">Año de creación:</span> 1881</li>
+            <li><span class="label">Descripción:</span> Una representación dramática de un momento clave en la historia rusa, destacando la tensión emocional y la riqueza de detalles históricos.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/38.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>El viejo pino, Darien, Connecticut</h1>
+        <ul>
+            <li><span class="label">Autor:</span> John Frederick Kensett</li>
+            <li><span class="label">Año de creación:</span> 1872</li>
+            <li><span class="label">Descripción:</span> Una escena tranquila que celebra la majestuosidad del paisaje americano, con un enfoque en la luz y la atmósfera.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/39.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>El Partenón</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Frederic Edwin Church</li>
+            <li><span class="label">Año de creación:</span> 1871</li>
+            <li><span class="label">Descripción:</span> Una representación imponente de la antigua Grecia, con un enfoque romántico en el Partenón como símbolo de la grandeza clásica.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/40.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Los icebergs</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Frederic Edwin Church</li>
+            <li><span class="label">Año de creación:</span> 1861</li>
+            <li><span class="label">Descripción:</span> Un paisaje épico que destaca la grandeza y la desolación de los icebergs en un entorno ártico.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/41.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Las vísperas del indio</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Asher Brown Durand</li>
+            <li><span class="label">Año de creación:</span> 1847</li>
+            <li><span class="label">Descripción:</span> Una representación romántica de un nativo americano en un entorno natural, que refleja la relación espiritual entre el hombre y la naturaleza.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/42.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>El valle de Lackawanna</h1>
+        <ul>
+            <li><span class="label">Autor:</span> George Inness</li>
+            <li><span class="label">Año de creación:</span> 1855</li>
+            <li><span class="label">Descripción:</span> Una obra que combina el paisaje rural con la industrialización emergente, mostrando una transición en la América del siglo XIX.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/43.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Acantilados del río Green</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Thomas Moran</li>
+            <li><span class="label">Año de creación:</span> 1874</li>
+            <li><span class="label">Descripción:</span> Un paisaje monumental que celebra la belleza y la escala impresionante de los acantilados del oeste americano.</li>
+        </ul>
+    </div>
+    
+    <div class="cuadro">
+        <img src="imag/44.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>La gran ola de Kanagawa</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Katsushika Hokusai</li>
+            <li><span class="label">Año de creación:</span> 1831</li>
+            <li><span class="label">Descripción:</span> Una de las obras más icónicas del ukiyo-e, representa una ola inmensa en el océano, con el monte Fuji en el fondo, simbolizando la fuerza de la naturaleza.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/45.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>La batalla de Trafalgar</h1>
+        <ul>
+            <li><span class="label">Autor:</span> J. M. W. Turner</li>
+            <li><span class="label">Año de creación:</span> 1822</li>
+            <li><span class="label">Descripción:</span> Una representación épica y dramática de la famosa batalla naval, destacando la interacción de la luz y el movimiento en el mar.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/46.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Suvorov cruzando los Alpes</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Vasily Surikov</li>
+            <li><span class="label">Año de creación:</span> 1899</li>
+            <li><span class="label">Descripción:</span> Una representación heroica de la campaña militar de Suvorov, capturando el desafío y la grandeza de cruzar los Alpes.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/47.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Vista de Delft</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Johannes Vermeer</li>
+            <li><span class="label">Año de creación:</span> 1660-1661</li>
+            <li><span class="label">Descripción:</span> Una obra maestra que retrata la ciudad de Delft, destacando la precisión y el equilibrio en la luz y la composición.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/48.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>La lechera</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Johannes Vermeer</li>
+            <li><span class="label">Año de creación:</span> 1657-1658</li>
+            <li><span class="label">Descripción:</span> Un retrato íntimo y sereno de una mujer vertiendo leche, con un enfoque en los detalles y la luz.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/49.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Almendro en flor</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Vincent van Gogh</li>
+            <li><span class="label">Año de creación:</span> 1890</li>
+            <li><span class="label">Descripción:</span> Un símbolo de esperanza y renacimiento, esta obra destaca por su delicadeza y sus colores vibrantes.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/50.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Cráneo con un cigarro encendido</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Vincent van Gogh</li>
+            <li><span class="label">Año de creación:</span> 1885-1886</li>
+            <li><span class="label">Descripción:</span> Una obra inusual y sarcástica que combina humor negro y elementos académicos.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/51.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Viento del sur, cielo despejado</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Katsushika Hokusai</li>
+            <li><span class="label">Año de creación:</span> 1831</li>
+            <li><span class="label">Descripción:</span> Parte de la serie "Treinta y seis vistas del monte Fuji", esta obra muestra el monte Fuji bajo un cielo rojo vibrante, simbolizando prosperidad.</li>
+        </ul>
+    </div>
+    <div class="cuadro">
+        <img src="imag/52.jpg" alt="la imagen no pudo ser cargada">        
+        <br>
+        <h1>Puente colgante en la frontera de Hida</h1>
+        <ul>
+            <li><span class="label">Autor:</span> Katsushika Hokusai</li>
+            <li><span class="label">Año de creación:</span> 1834</li>
+            <li><span class="label">Descripción:</span> Una de las series que exploran vistas notables, esta obra celebra la ingeniería y la armonía con la naturaleza.</li>
+        </ul>
+    </div>
+    
+
+
+    
+</div>
+
+
+
+</body>
+<script src="js.js"></script>
+</html>
+
