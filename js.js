@@ -12,7 +12,7 @@ function aplicarb(){
 var mains = document.getElementsByClassName("cuadro")
 
 for (let i = mains.length - 1; i >= 10; i--) {
-  mains[i].style.display = 'none';  // Ocultar el elemento
+  mains[i].style.display = 'none';  
 }
 
 
@@ -28,11 +28,11 @@ function vaciarWeb(){
     //main.remove(main)
   //}
   for (let i = 0; i < mains.length; i++) {
-    mains[i].style.display = 'block';  // Hacer visible cada elemento
+    mains[i].style.display = 'block';  
 
   }
   for (let i = mains.length - 1; i >= input2; i--) {
-    mains[i].style.display = 'none';  // Ocultar el elemento
+    mains[i].style.display = 'none';  
   }
 
 }
