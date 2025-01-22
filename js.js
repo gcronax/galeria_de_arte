@@ -4,7 +4,7 @@
 function aplicaroscuro(){
   document.getElementById('pruebaid').href = 'clasese2.css';
 }
-function aplicarb(){
+function aplicarblanco(){
   document.getElementById('pruebaid').href = 'clasese.css';
 }
 
