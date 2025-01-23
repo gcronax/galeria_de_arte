@@ -1,11 +1,22 @@
 
-
+function cambiarTema() {
+  const tema = document.getElementById('selectTema').value;
+  if (tema === 'claro') {
+      aplicarblanco();
+  } else if (tema === 'oscuro') {
+      aplicaroscuro();
+  }
+}
 
 function aplicaroscuro(){
-  document.getElementById('pruebaid').href = 'clasese2.css';
+  document.getElementById("pruebaid").href = "clasese2.css";
+  console.log("aplicaroscuro");
+
 }
 function aplicarblanco(){
-  document.getElementById('pruebaid').href = 'clasese.css';
+  document.getElementById("pruebaid").href = "clasese.css";
+  console.log("aplicarblanco");
+
 }
 
 
