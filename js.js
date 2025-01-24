@@ -22,9 +22,14 @@ function aplicarblanco(){
 
 var mains = document.getElementsByClassName("cuadro")
 
+  
+
+
+
 for (let i = mains.length - 1; i >= 10; i--) {
   mains[i].style.display = 'none';  
 }
+
 
 
 
